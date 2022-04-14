@@ -13,7 +13,7 @@ app.get("/",function(req,res){
 });
 app.post("/user",url,function(req,res){
 
-a=req.query.numbers;
+a=req.body.numbers;
 f=true;
 id="gari";
 odd=[];
