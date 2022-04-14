@@ -8,7 +8,9 @@ app.use(cors());
 
 var url=bodyparser.urlencoded({extended:false});
 app.use(bodyparser.json());
-
+app.get("/",function(req,res){
+  res.send("hi");
+}
 app.post("/user",url,function(req,res){
 
 a=req.query.numbers;
